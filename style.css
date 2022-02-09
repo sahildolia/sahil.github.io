@@ -360,7 +360,7 @@ section .block2{
         font-size: 3rem;
     }
     .block2 .about p{
-    line-height: 1.2;
+    line-height: 1.6;
     }
     section .block3{
         display: flex;
