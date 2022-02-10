@@ -195,6 +195,7 @@ align-items: center;
 }
 .work .card{
      width: 70%;
+     border: none;
 }
 .work .card p{
     line-height: 1.6;
