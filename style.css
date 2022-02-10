@@ -283,7 +283,7 @@ footer{
                 }
 
     .v-class-resp{
-    height:0;
+    height:0 !important;
                 }
 
         /* first section Css */
