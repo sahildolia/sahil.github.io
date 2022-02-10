@@ -57,6 +57,7 @@ li:hover{
     font-size: 4rem;
     border-top: 4px solid gray;
     border-start-end-radius: 10px;
+    font-weight: lighter;
 }
 .block .right{
     width: 50%;
@@ -193,8 +194,7 @@ text-align: center;
 align-items: center;
 }
 .work .card{
-    border: 2px solid;
-    width: 70%;
+     width: 70%;
 }
 .work .card p{
     line-height: 1.6;
