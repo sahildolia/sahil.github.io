@@ -6,6 +6,15 @@
     box-sizing: border-box;
   
 }
+#loading{
+    width: 100%;
+    position: fixed;
+display: block;
+margin: auto;
+height: 100%;
+    background: #fff url('./images/Magnify-1s-200px.gif') no-repeat center;
+    z-index: 99999;
+}
 body{
     background-color: blanchedalmond;
 
