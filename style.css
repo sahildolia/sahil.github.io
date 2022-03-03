@@ -77,8 +77,7 @@ hr{
 
 /* first section Css */
 section{
-    margin: 4% 0px;
-    
+margin-bottom: 4%;    
 }
 section .block{
     display: flex;
