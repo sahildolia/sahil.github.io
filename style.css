@@ -34,7 +34,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6, 156, 83, 0.26);
+  background: rgba(6,156,84,.5);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -42,17 +42,18 @@ body{
 }
 
 .scrolltop:hover{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: var(--first-color-alt);
 }
 
 .scrolltop__icon{
   font-size: 1.8rem;
-  color: rgba(6, 156, 83, 0.26);
+  color: var(--body-color);
 }
 .show-scroll{
   visibility: visible;
   bottom: 1.5rem;
 }
+
 
 .first-temp{
     background-color: #232a34;
