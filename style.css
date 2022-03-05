@@ -47,6 +47,7 @@ body{
 
 .scrolltop__icon{
   font-size: 1.8rem;
+  color: rgba(6, 156, 83, 0.26);
 }
 .show-scroll{
   visibility: visible;
