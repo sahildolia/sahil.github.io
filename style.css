@@ -47,8 +47,8 @@ list-style: none;
 width: 20px;
 height: 20px;
 background: rgba(96, 183, 199, 0.1);
-animation: animate 25s ease-in-out infinite alternate;
-bottom: calc(-150px - 40vh);
+animation: animate 24s linear infinite alternate;
+bottom: calc(-150px - 10vh);
 }
 
 .circles li:nth-child(1) {
