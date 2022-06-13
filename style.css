@@ -19,7 +19,52 @@ html::-webkit-scrollbar-thumb{
 html::-webkit-scrollbar-thumb:hover{
   background-color: #43d694;
 }
+/* Loader */
+#loader{
+  z-index: 999999999;
+  background-color: #232a34;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.spinner{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.spinner::before,
+.spinner::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+.spinner::before{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #ff00cc 0%,
+  #333399 100%);
+  animation: spin .5s infinite linear;
+}
+.spinner::after{
+  width: 85%;
+  height: 85%;
+  background-color: #232a34;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+@keyframes spin{
+  to{
+      transform: rotate(360deg);
+  }
+}
+ #load{
+  display: none;
+}
 body{
   width: 100%;
   overflow-x: hidden;
@@ -280,6 +325,7 @@ section .block{
 .inner-detail{
   padding: 8px;
   color: #fff;
+  text-decoration: none;
 }
 
 
@@ -630,7 +676,9 @@ section .block3 .img img{
   position: relative;
   width: 24%;
 }
-
+.card-container .image{
+  height: 100%;
+}
 .image {
   display: block;
   width: 100%;
@@ -653,7 +701,7 @@ section .block3 .img img{
   transition: .3s ease;
 }
 .overlay .text{
-    color: white;
+    color: black;
 }
 .overlay a{
     color: white;
@@ -983,13 +1031,12 @@ footer a{
   .block .right{
       width: 100%;
   }
-  .block .right img{
-      border: 1px solid white;
-  }
+
   .details{
       justify-content: center;
+
   }
-.info .inner-detail{
+ .inner-detail{
   text-align: left;
 }
   

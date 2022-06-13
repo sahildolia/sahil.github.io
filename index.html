@@ -5,8 +5,9 @@
 
   <link rel="icon" type="image/x-icon" href="./images/avataaars.svg">    <link rel="stylesheet" href="">
 
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+ <script src="script.js" defer></script>
 
   <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -20,9 +21,14 @@
 <script src="https://kit.fontawesome.com/d65d59f623.js" crossorigin="anonymous"></script>
 
 <title>Portfolio | Home</title>
+
 </head>
-<body>
+<body onload="myFunction()">
+  <div id="loader">
+    <div class="spinner"></div>
+</div>
     <div class="first-temp">
+    
             <!-- navbar -->
             <nav class="navbar background h-nav-resp">
               
@@ -74,7 +80,7 @@
     <section >
         <div class="block" id="home">
            
-            <div class="right" data-aos="fade-right">
+            <div class="right">
                 <img src="./images/Pic-uhd.png" class="uhd" alt="image here">
            <img src="images/IMG_20210405_193004.jpg" class="simple" alt="">
             </div>
@@ -85,43 +91,46 @@
                 <span id = "staticText" >I am... <span id="typeline" ></span></span>
                </div>
                <div class="details">
-                   <div class="icons">
-                    <div class="fa-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="fa-icon">
-                        <i class="fa-solid fa-phone"></i>
-                                        </div>
-                    <div class="fa-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="fa-icon">
-                        <i class="fa-brands fa-github-square"></i>
-                    </div>
-                   
-                   </div>
-                   <div class="info">
-                       <div class="inner-detail"> Bassi Pathana, Punjab.</div>
-                       <div class="inner-detail"> +91 62806-49810</div>
-                       <div class="inner-detail"> sahildolia.456@gmail.com</div>
-                       <div class="inner-detail"> https://github.com/sahildolia</div>
+                <div class="icons">
+                 <div class="fa-icon">
+                     <i class="fa-solid fa-location-dot"></i>
+                 </div>
+                 <div class="fa-icon">
+                     <i class="fa-solid fa-phone"></i>
+                                     </div>
+                 <div class="fa-icon">
+                     <i class="fa-solid fa-envelope"></i>
+                 </div>
+                 <div class="fa-icon">
+                     <i class="fa-brands fa-github-square"></i>
+                 </div>
+                
+                </div>
+                <div class="info">
+                    <div class="inner-detail"> Bassi Pathana, Punjab.</div>
+                    <div class="inner-detail"> +91 62806-49810</div>
+                    <a class="inner-detail" href="mailto:sahildolia.456@gmail.com">sahildolia.456@gmail.com </a>  <br> <br>                
+                    <a class="inner-detail" href="https://github.com/sahildolia">Github</a>
+                  </div>
+            </div>
                    </div>
                </div>
             </div>
             </div>
         </div>
+      </div>
             </section>
          
             <section>
                 <div class="block2" id="about">
                     <div class="about">
+                      <div class="a1">
                         <h1 style="color: #323232; font-family: 'Arimo', sans-serif;">
                             About Me
                         </h1>
-                        <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr"  data-aos="fade-right"
-                        data-aos-offset="50"
-                        data-aos-easing="ease-in-sine">
-                        <p> <span> Hey there! My name is Sahil Dolia, and I'm a third year studying Computer Applications.</span> I love to solve problems 
+                        <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr">
+                      </div>
+                        <p class="lp"> <span> Hey there! My name is Sahil Dolia, and I'm a third year studying Computer Applications.</span> I love to solve problems 
                             whether it's finding the most elegant way to write a line of code or any other problem in life, I love the challange 
                             of finding the way and discovering solutions. That's why I love writing and the satisfaction that comes from finding just the right word;
                             Or why I study psychology in my spare time to figure out how people think. As long as there is a problem to solve or a challange to
@@ -132,18 +141,18 @@
                         </p>
                        
                     </div>
-                    <div class="img">
+                    <div class="img ri">
                         <img style="height: 90%;" src="./images/about.png" alt="my-pic"> </div>              
                 </div>
             </section> <br>
             <div class="card-heading">
+              <div class="s3">
             <h1 style="margin-top: 40px; font-family: 'Arimo', sans-serif;">What I Can Do For You</h1> 
-            <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr"  data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-easing="ease-in-sine">
+            <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr">
+          </div>
             <br>
             <div class="Main-card">
-                <div class="card">
+                <div class="card ">
                     <i class="fa-solid fa-pen-ruler icon"></i> <br> <br>
                     <h2>Web Design</h2> <br>
                         <p>An effective UI/UX is what captures attention and spreads a clear message. I make sure the design is innovative and neat with all of this.</p>
@@ -156,10 +165,10 @@
             </div>
         </div>
           <div style="text-align: center;  margin-bottom: 14px;" class="skills" id="skills" >
-              <h1 style="margin-top: 40px; color: #323232; font-family: 'Arimo', sans-serif;">My Skills</h1>
-              <hr style="display: block; color: #2ca46d; margin-bottom: 40px; width: 8%;" class="hr"  data-aos="fade-right"
-              data-aos-offset="50"
-              data-aos-easing="ease-in-sine">
+             <div class="my-skills">
+            <h1 style="margin-top: 40px; color: #323232; font-family: 'Arimo', sans-serif;">My Skills</h1>
+              <hr style="display: block; color: #2ca46d; margin-bottom: 40px; width: 8%;" class="hr">
+            </div>
 
                     <div class="container">
                       <div class="card">
@@ -222,14 +231,14 @@
           
           </div>
           <section style="text-align: center; background-color:#232a34; padding: 40px; " id="work">
+            <div class="recent">
             <h1 style="margin-top: 40px; font-family: 'Arimo', sans-serif;">Recent Works</h1>
-            <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr"  data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-easing="ease-in-sine">
+            <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr">
+          </div>
             <br>
             <div style="display: flex; justify-content: space-around;" class="recent-work">
               <div class="card-container">
-                <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt="Avatar" class="image">
+                <img src="./images/fod-delivery.jpg" alt="Avatar" class="image">
                 <div class="overlay">
                   <div class="text"> Food Delivery website</div>
                   <div class="open">
@@ -238,7 +247,7 @@
                 </div>
               </div>
               <div class="card-container">
-                <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt="Avatar" class="image">
+                <img src="./images/food-restraunt.jpg" alt="Avatar" class="image">
                 <div class="overlay">
                   <div class="text">Restaurant website</div>
                   <div class="open">
@@ -247,7 +256,7 @@
                 </div>
               </div>
               <div class="card-container">
-                <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt="Avatar" class="image">
+                <img src="./images/gym-management.jpg" alt="Avatar" class="image">
                 <div class="overlay">
                   <div class="text">Gym-Management - Fitness point</div>
                   <div class="open">
@@ -256,9 +265,9 @@
                 </div>
               </div>
               <div class="card-container">
-                <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt="Avatar" class="image">
+                <img src="./images/portfolio.png" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Web Design</div>
+                  <div class="text">Portfolio Template</div>
                   <div class="open">
                     <a href="#">See Case Study</a>
                   </div>
@@ -266,32 +275,7 @@
               </div>
             </div>
           </section>
-        <section>
-          <!-- <div class="contact" id="contact" >
-            <h1 style="margin-top: 40px; color: #323232;">Get in touch</h1>
-            <hr style="display: block; color: #2ca46d; margin-bottom: 40px;" class="hr"  data-aos="fade-right"
-            data-aos-offset="50"
-            data-aos-easing="ease-in-sine">
-
-            <div class="info">
-              <div class="space">
-                <input type="text" placeholder="Name">
-              </div>
-              <div class="space">
-                <input type="email" placeholder="Email">
-              </div>
-              <div class="space">
-                <input type="text" placeholder="Subject">
-              </div>
-            </div>
-            <div class="msg">
-              <input style="width: 100%; border-radius: 999999px; height: auto;" type="text" placeholder="Your message">
-            </div>
-            <br>
-            <div class="send-msg">
-         <a href="#">Send message</a>
-         </div>
-          </div>  -->
+         
           <section id="contact">
             <div class="contact-box">
               <div class="contact-links">
@@ -313,6 +297,7 @@
               </div>
               <div class="contact-form-wrapper">
                 <form>
+                  <div class="fields">
                   <div class="form-item">
                     <input type="text" name="sender" required>
                     <label>Name:</label>
@@ -325,14 +310,15 @@
                     <textarea class="" name="message" required></textarea>
                     <label>Message:</label>
                   </div>
+                </div>
                   <button class="submit-btn">Send</button>  
                 </form>
               </div>
             </div>
           </section>
-        </section>
+    
           
-        <footer style="  padding: 20px;  background-color: #232a34;">
+        <footer style="  padding: 20px;  background-color: #232a34;" class="footer">
           <h1>Sahil Dolia</h1>
             <ul>
            <li>  <a href="https://twitter.com/Sahil61153886" id="twitter">Twitter</a></li>
@@ -341,11 +327,17 @@
            <li>  <a href="https://www.linkedin.com/in/sahil-dolia-2b52261a9/" id="linkedin">Linkedin</a></li>
             </ul>
         </footer>
+
+        <script>
+
+          var preloader = document.getElementById('loader');
+          function myFunction(){
+            preloader.style.display = 'none';
+          }
+
+        </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 <script src="index.js"></script>
 <script>
 	jQuery(document).ready(function () {
