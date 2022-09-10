@@ -71,11 +71,26 @@ body{
 
 
 }
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2ca46d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 .circles {
 position: absolute;
 bottom: 0;
@@ -388,8 +403,9 @@ h1{
 }
 .block  .right img{
   height: 100vh;
-  
+  filter: drop-shadow(4px 2px 1px #fff);
 }
+  
 .block  .right .simple{
   display: none;
 }
@@ -483,11 +499,11 @@ align-items: center;
   box-shadow: 1px 1px 5px 0px #323232;
   transition: all 150ms ease-in-out;
 }
-.card:hover {
+/* .card:hover {
     top: -3px;
     left: -3px;
   box-shadow: 3px 3px 15px 0px #2c2a2a;
-}
+} */
 .card:active {
     top: 2px;
     left: 2px;
@@ -550,7 +566,7 @@ align-items: center;
   z-index: 1000;
 }
 
-.percent .number {
+/* .percent .number {
   position: absolute;
   top: 0;
   left: 0;
@@ -567,22 +583,22 @@ align-items: center;
   font-weight: 700;
   font-size: 40px;
   transition: 0.5s;
-}
+} */
 
-.card:hover .percent .number h2 {
+/* .card:hover .percent .number h2 {
   color: #fff;
   font-size: 60px;
-}
+} */
 
-.percent .number h2 span {
+/* .percent .number h2 span {
   font-size: 24px;
   color: #777;
-}
+} */
 
-.card:hover .percent .number h2 span {
+/* .card:hover .percent .number h2 span {
   color: #fff;
   transition: 0.5s;
-}
+} */
 
 .text {
   position: relative;
@@ -599,7 +615,7 @@ align-items: center;
   color: #fff;
 }
 
-svg {
+/* svg {
   position: relative;
   width: 150px;
   height: 150px;
@@ -614,14 +630,14 @@ svg circle {
   stroke-width: 10;
   stroke-linecap: round;
   transform: translate(5px, 5px);
-}
+} */
 
-svg circle:nth-child(2) {
+/* svg circle:nth-child(2) {
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-}
+} */
 
-.card:nth-child(1) svg circle:nth-child(2) {
+/* .card:nth-child(1) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 90) / 100);
   stroke: #00ff43;
 }
@@ -637,7 +653,102 @@ svg circle:nth-child(2) {
 .card:nth-child(4) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 52) / 100);
   stroke: #3B44F6;
+} */
+
+/* NEW SKILLS BAR CSS */
+
+.a1{
+	margin: 21px 0px 0px 0px;
+	padding: 16px 0px 0px 0px;
 }
+
+.skill-container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    border: 1px solid #323232c9;
+    /* border: 2px solid rgba(255,255,255,0.06); */
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    margin-bottom: 36px;
+} 
+.skill-container {
+  font-family: 'Arimo', sans-serif;
+    color: black;
+    font-weight: 500;
+   
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.skill-details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.skill-details span{
+	color: #323232;
+}
+.skill-bar{
+    position: relative;
+	background-color: #323232;
+ 
+    border-radius: 20px;
+  
+}
+.skill-bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #2ca46d;
+   
+ 
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 72%;
+    }
+}
+#wordpress-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 80%;
+    }
+} 
+#bootstrap-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 78%;
+    }
+} 
+
+
+/* NEW SKILLS BAR CSS CLOSED */
 
 section .block3{
   display: flex;
