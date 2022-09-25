@@ -117,7 +117,7 @@ gsap.from('.a1', {
                     },
                     duration: 1,
                     opacity: 0,
-                    delay:1.2,
+                    delay:1,
                     x: '100%' 
                  })
             
